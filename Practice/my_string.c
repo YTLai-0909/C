@@ -144,32 +144,32 @@ char* my_strstr(const char *s1, const char *s2) {
 
 int main(void) {
 	
-    char a1[20] = "I love dog ";
-    char b1[20] = "and cat.";
-    char c1[20] = "love";
-    char d1[20] = {'\0'};
-    char e1[20] = "lion";
-    char n1[20] = {'\0'};
-
-    char a2[20] = "I love dog ";
-    char b2[20] = "and cat.";
-    char c2[20] = "love";
-    char d2[20] = {'\0'};
-    char e2[20] = "lion";
-    char n2[20] = {'\0'};
-    
+	char a1[20] = "I love dog ";
+	char b1[20] = "and cat.";
+	char c1[20] = "love";
+	char d1[20] = {'\0'};
+	char e1[20] = "lion";
+	char n1[20] = {'\0'};
+	
+	char a2[20] = "I love dog ";
+	char b2[20] = "and cat.";
+	char c2[20] = "love";
+	char d2[20] = {'\0'};
+	char e2[20] = "lion";
+	char n2[20] = {'\0'};
+	
 	/* strlen : ­pºâªø«×  
 		1. ªÅ¦r¦ê 
 		2. ¦r¦ê  
 	*/
 	printf("1. Strlen of NULL: %u\n", strlen(n1));
 	printf("1. My_strlen of NULL: %u\n", my_strlen(n1));
-    printf("2. Strlen of a1: %u\n", strlen(a1));
-    printf("2. My_Strlen of a1: %u\n", my_strlen(a1));
-    printf("\n");
-    
-    printf("\n\n");
-
+	printf("2. Strlen of a1: %u\n", strlen(a1));
+	printf("2. My_Strlen of a1: %u\n", my_strlen(a1));
+	printf("\n");
+	
+	printf("\n\n");
+	
 	/* strcmp : ¤ñ¸û¦r¦ê  
 		1. ªÅ¦r¦ê < ¦r¦ê 
 		2. str1 < str2  
@@ -181,38 +181,38 @@ int main(void) {
 	// str1 < str2 -> -1 
 	printf("1. Strcmp of NULL and a1: %d\n", strcmp(n1, a1));
 	printf("1. My_Strcmp of NULL and a1: %d\n", my_strcmp(n1, a1));
-    printf("2. Strcmp of a1 and b1: %d\n", strcmp(a1, b1));
-    printf("2. My_Strcmp of a1 and b1: %d\n", my_strcmp(a1, b1));
-    printf("\n");
+	printf("2. Strcmp of a1 and b1: %d\n", strcmp(a1, b1));
+	printf("2. My_Strcmp of a1 and b1: %d\n", my_strcmp(a1, b1));
+	printf("\n");
 		
 	// str1 = str2 -> 0 
 	printf("3. Strcmp of NULL and NULL: %d\n", strcmp(n1, n1));
 	printf("3. My_Strcmp of NULL and NULL: %d\n", my_strcmp(n1, n1));
-    printf("4. Strcmp of a1 and a2: %d\n", strcmp(a1, a2));
-    printf("4. My_Strcmp of a1 and a2: %d\n", my_strcmp(a1, a2));
-    printf("\n");
-
+	printf("4. Strcmp of a1 and a2: %d\n", strcmp(a1, a2));
+	printf("4. My_Strcmp of a1 and a2: %d\n", my_strcmp(a1, a2));
+	printf("\n");
+	
 	// str1 > str2 -> 1 
 	printf("5. Strcmp of a1 and NULL: %d\n", strcmp(a1, n1));
 	printf("5. My_Strcmp of a1 and NULL: %d\n", my_strcmp(a1, n1));	
-    printf("6. Strcmp of c1 and a1: %d\n", strcmp(c1, a1));
-    printf("6. My_Strcmp of c1 and a1: %d\n", my_strcmp(c1, a1));
-    printf("\n");
-    
-    printf("\n\n");    
-
+	printf("6. Strcmp of c1 and a1: %d\n", strcmp(c1, a1));
+	printf("6. My_Strcmp of c1 and a1: %d\n", my_strcmp(c1, a1));
+	printf("\n");
+	
+	printf("\n\n");    
+	
 	/* strcpy : ½Æ»s¦r¦ê  
 		1. ªÅ¦r¦ê <- ªÅ¦r¦ê  
 		2. ªÅ¦r¦ê <- ¦r¦ê  
 	*/ 
 	printf("1. Strcpy of n1 and NULL: %s\n", strcpy(n1, n1));
 	printf("1. My_Strcpy of n2 and NULL: %s\n", strcpy(n2, n2));	
-    printf("2. Strcpy of d1 and a1: %s\n", strcpy(d1, a1));
-    printf("2. My_Strcpy of d2 and a2: %s\n", my_strcpy(d2, a2));
-    printf("\n");
-    
-    printf("\n\n");      
-
+	printf("2. Strcpy of d1 and a1: %s\n", strcpy(d1, a1));
+	printf("2. My_Strcpy of d2 and a2: %s\n", my_strcpy(d2, a2));
+	printf("\n");
+	
+	printf("\n\n");      
+	
 	/* strcat : ³s±µ¦r¦ê  
 		1. ªÅ¦r¦ê + ªÅ¦r¦ê 
 		2. ¦r¦ê + ªÅ¦r¦ê 
@@ -225,18 +225,18 @@ int main(void) {
 	printf("2. My_Strcat of a2 and NULL: %s\n", strcat(a2, n2));	
 	printf("3. Strcat of NULL and a1: %s\n", strcat(n1, a1));
 	printf("3. My_Strcat of NULL and a2: %s\n", strcat(n2, a2));		
-    printf("4. Strcat of d1 and b1: %s\n", strcat(d1, b1));
-    printf("4. My_Strcat of d2 and b2: %s\n", my_strcat(d2, b2));
-    printf("\n");
-    
-    printf("\n\n");      
-
+	printf("4. Strcat of d1 and b1: %s\n", strcat(d1, b1));
+	printf("4. My_Strcat of d2 and b2: %s\n", my_strcat(d2, b2));
+	printf("\n");
+	
+	printf("\n\n");      
+	
 	int i;
 	for(i = 0; i < 20; i++) {
 		n1[i] = '\0';
 		n2[i] = '\0';
 	}
-
+	
 	/* strstr ·j´M¦r¦ê  
 		1. ªÅ¦r¦ê -> ªÅ¦r¦ê 
 		2. ªÅ¦r¦ê -> ¦r¦ê 
@@ -251,11 +251,11 @@ int main(void) {
 	printf("2. My_Strstr of NULL and c2: %s\n", my_strstr(n1, c2));
 	printf("3. Strstr of d1 and NULL: %s\n", strstr(d1, n1));
 	printf("3. My_Strstr of d2 and NULL: %s\n", my_strstr(d2, n1));
-    printf("4-1. Strstr of d1 and c1: %s\n", strstr(d1, c1));
-    printf("4-1. My_Strstr of d2 and c2: %s\n", my_strstr(d2, c2));
-    printf("4-2. Strstr of d1 and e1: %s\n", strstr(d1, e1));
-    printf("4-2. My_Strstr of d2 and e2: %s\n", my_strstr(d2, e2));
-    printf("\n");
-
-    return 0;
+	printf("4-1. Strstr of d1 and c1: %s\n", strstr(d1, c1));
+	printf("4-1. My_Strstr of d2 and c2: %s\n", my_strstr(d2, c2));
+	printf("4-2. Strstr of d1 and e1: %s\n", strstr(d1, e1));
+	printf("4-2. My_Strstr of d2 and e2: %s\n", my_strstr(d2, e2));
+	printf("\n");
+	
+	return 0;
 }
